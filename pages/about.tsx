@@ -8,6 +8,10 @@ const AboutPage: NextPage = () => {
   const imgRef = useRef(null);
   const textRef = useRef(null);
 
+  const rectang = useRef(null);
+  const rectang2 = useRef(null);
+  const rectang3 = useRef(null);
+
   useEffect(() => {
     gsap.fromTo(
       imgRef.current,
@@ -35,6 +39,45 @@ const AboutPage: NextPage = () => {
         ease: "elastic.inOut(1, 0.5)",
       }
     );
+    gsap.fromTo(
+      rectang.current,
+      {
+        opacity: 0,
+        x: 100,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power3.inOut",
+      }
+    );
+    gsap.fromTo(
+      rectang2.current,
+      {
+        opacity: 0,
+        x: 100,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power3.inOut",
+      }
+    );
+    gsap.fromTo(
+      rectang3.current,
+      {
+        opacity: 0,
+        x: 100,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power3.inOut",
+      }
+    );
   }, []);
 
   return (
@@ -43,9 +86,17 @@ const AboutPage: NextPage = () => {
         <title>Rizki Ashari | About Me</title>
       </Head>
       <div className={Style.container}>
-        <img src='/rectangle.png' className={Style.rectangle01} />
-        <img src='/rectangle.png' className={Style.rectangle02} />
-        <img src='/rectangle.png' className={Style.rectangle03} />
+        <img ref={rectang} src='/rectangle.png' className={Style.rectangle01} />
+        <img
+          ref={rectang2}
+          src='/rectangle.png'
+          className={Style.rectangle02}
+        />
+        <img
+          ref={rectang3}
+          src='/rectangle.png'
+          className={Style.rectangle03}
+        />
         <div className={Style.Content}>
           <div ref={imgRef} className={Style.ContainerImage}>
             <img src='/about-me.png' alt='About Me' className={Style.Image} />
