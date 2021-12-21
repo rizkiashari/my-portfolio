@@ -1,6 +1,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .content {
   top: 50%;
@@ -41,6 +42,8 @@
   height: auto;
   position: absolute;
   right: 0;
+  /* display: none; */
+  /* opacity: 0.5; */
   z-index: -1;
 }
 

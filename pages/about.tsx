@@ -7,7 +7,9 @@ const AboutPage: NextPage = () => {
       <Head>
         <title>Rizki Ashari | About Me</title>
       </Head>
-      <div></div>
+      <div>
+        
+      </div>
     </>
   );
 };

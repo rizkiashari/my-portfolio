@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Style from "./SosialMedia.module.css";
 
+import { gsap } from "gsap";
+
 const SosialMedia = () => {
+  const linkRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      linkRef.current,
+      {
+        opacity: 0,
+        x: -400,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1.5,
+        ease: "power2.out",
+      }
+    );
+  }, []);
+
   return (
-    <div className={Style.SosialMedia}>
+    <div ref={linkRef} className={Style.SosialMedia}>
       <div className={Style.WrapperSosMed}>
         {/* Linkeind */}
         <a href='https://www.linkedin.com/in/rizki-asharii/'>
