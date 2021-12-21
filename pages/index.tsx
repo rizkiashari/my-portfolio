@@ -41,7 +41,6 @@ const Home: NextPage = () => {
             objectFit='cover'
             layout='responsive'
             alt='profile'
-            quality={100}
             height={120}
             width={120}
           />
