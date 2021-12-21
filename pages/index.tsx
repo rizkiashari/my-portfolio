@@ -3,8 +3,10 @@ import Head from "next/head";
 import Image from "next/image";
 import { gsap } from "gsap";
 import Style from "../styles/Home.module.css";
+import { useRouter } from "next/router";
 
 const Home: NextPage = () => {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -15,7 +17,9 @@ const Home: NextPage = () => {
           <div className={Style.Title}>
             <h3>Hi, I’m Rizki Ashari Front end Developer</h3>
           </div>
-          <a href='/about' className={Style.Button}>
+          <button
+            onClick={() => router.push("/about")}
+            className={Style.Button}>
             About me
             <svg
               width='42'
@@ -29,7 +33,7 @@ const Home: NextPage = () => {
                 fill='black'
               />
             </svg>
-          </a>
+          </button>
         </div>
         <div className={Style.Image}>
           <Image
