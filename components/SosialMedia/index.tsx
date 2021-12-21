@@ -8,6 +8,7 @@ const SosialMedia = () => {
         {/* Linkeind */}
         <a href='https://www.linkedin.com/in/rizki-asharii/'>
           <svg
+            className={Style.LinkSos}
             width='32'
             height='31'
             viewBox='0 0 32 31'
@@ -22,6 +23,7 @@ const SosialMedia = () => {
         {/* Instagram */}
         <a href='https://www.instagram.com/rizkiashari_/'>
           <svg
+            className={Style.LinkSosIG}
             width='32'
             height='31'
             viewBox='0 0 32 31'
@@ -36,6 +38,7 @@ const SosialMedia = () => {
         {/* Facebook */}
         <a href='https://www.facebook.com/rizki.ashari.39'>
           <svg
+            className={Style.LinkSosFacebook}
             width='32'
             height='31'
             viewBox='0 0 32 31'
@@ -50,6 +53,7 @@ const SosialMedia = () => {
         {/* Gmail */}
         <a href='mailto:rizkiashari1026@gmail.com'>
           <svg
+            className={Style.LinkSos}
             width='32'
             height='25'
             viewBox='0 0 32 25'
@@ -64,6 +68,7 @@ const SosialMedia = () => {
         {/* Github */}
         <a href='https://github.com/rizkiashari/'>
           <svg
+            className={Style.LinkSosGithub}
             width='36'
             height='36'
             viewBox='0 0 32 32'

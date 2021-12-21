@@ -13,7 +13,27 @@
   justify-content: center;
 }
 
-@media only screen and (max-width: 768px) {
+.LinkSos:hover {
+  background-color: #e14e1f;
+  border-radius: 10%;
+}
+
+.LinkSosFacebook:hover {
+  background-color: #e14e1f;
+  border-radius: 50%;
+}
+
+.LinkSosGithub:hover {
+  background-color: #e14e1f;
+  border-radius: 50%;
+}
+
+.LinkSosIG:hover {
+  background-color: #e14e1f;
+  border-radius: 30%;
+}
+
+@media only screen and (max-width: 900px) {
   .SosialMedia {
     bottom: 2em;
     top: auto;

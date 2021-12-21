@@ -1,12 +1,16 @@
-import type { NextPage } from 'next'
-import React from 'react'
+import type { NextPage } from "next";
+import React from "react";
+import Head from "next/head";
 
 const MyPortfolio: NextPage = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <Head>
+        <title>Rizki Ashari | My Portfolio</title>
+      </Head>
+      <div></div>
+    </>
+  );
+};
 
-export default MyPortfolio
+export default MyPortfolio;

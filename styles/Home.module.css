@@ -1,12 +1,63 @@
 .container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+.content {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.Title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  max-width: 400px;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  padding: 8px 1px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  color: #111222;
+}
+
+.Button:hover {
+  background-color: #cecece;
+  color: #111222;
+}
+
+.Image {
+  width: 40%;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  z-index: -1;
 }
 
 /* Media Query Tablets */
-@media screen and(max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .container {
     max-width: 100%;
     padding: 0 16px;
+  }
+
+  .Image {
+    width: 80%;
+    height: auto;
+  }
+
+  .Title {
+    font-size: 1.5rem;
+    max-width: 300px;
   }
 }
