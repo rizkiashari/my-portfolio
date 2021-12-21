@@ -1,0 +1,28 @@
+.SosialMedia {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 48px;
+}
+
+.WrapperSosMed {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .SosialMedia {
+    bottom: 2em;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .WrapperSosMed {
+    display: inline-flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+}
