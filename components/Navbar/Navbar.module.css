@@ -26,6 +26,7 @@
 .Logo {
   font-size: 36px;
   color: #ffebeb;
+  cursor: pointer;
 }
 
 .NavbarList {

@@ -16,7 +16,9 @@ const Navbar = () => {
   return (
     <nav className={Style.Navbar}>
       <div className={Style.Container}>
-        <h3 className={Style.Logo}>AsZki</h3>
+        <h3 onClick={() => router.push("/")} className={Style.Logo}>
+          AsZki
+        </h3>
         <button onClick={() => handleActive()} className={Style.ButtonHam}>
           {!isActive ? (
             <svg
