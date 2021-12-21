@@ -68,14 +68,14 @@
 
 .rectangle01 {
   position: fixed;
-  bottom: 0;
+  bottom: -30px;
   transform: scale(0.7);
   z-index: 2;
 }
 .rectangle02 {
   position: fixed;
-  top: 8rem;
-  left: 40rem;
+  top: 7rem;
+  left: 34rem;
   transform: scale(0.7);
   z-index: 2;
 }
