@@ -37,8 +37,8 @@
 }
 
 .Image {
-  width: 40%;
-  height: 20px;
+  width: 550px;
+  height: auto;
   position: absolute;
   right: 0;
   z-index: -1;

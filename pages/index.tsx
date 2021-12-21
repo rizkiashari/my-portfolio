@@ -5,8 +5,6 @@ import { gsap } from "gsap";
 import Style from "../styles/Home.module.css";
 import { useRouter } from "next/router";
 
-import Photo from "../public/Photo.png";
-
 const Home: NextPage = () => {
   const router = useRouter();
   return (
@@ -37,16 +35,7 @@ const Home: NextPage = () => {
             </svg>
           </button>
         </div>
-        <div className={Style.Image}>
-          <Image
-            src={Photo}
-            objectFit='cover'
-            layout='responsive'
-            alt='profile'
-            height={120}
-            width={120}
-          />
-        </div>
+        <img alt='Image' src='/Photo.png' className={Style.Image} />
       </div>
     </>
   );
