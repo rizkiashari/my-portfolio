@@ -81,8 +81,8 @@
 }
 .rectangle03 {
   position: fixed;
-  right: 19rem;
-  bottom: 7rem;
+  right: 14rem;
+  bottom: 5rem;
   transform: scale(0.5);
   z-index: 2;
 }
