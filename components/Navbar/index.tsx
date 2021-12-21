@@ -64,32 +64,38 @@ const Navbar = () => {
             [Style.Inactive]: !isActive, // if isActive is false, add the class "inactive"
           })}>
           {router.pathname === "/" ? (
-            <li className={Style.NavbarListActive}>
+            <li
+              onClick={() => handleActive()}
+              className={Style.NavbarListActive}>
               <Link href='/'>Home</Link>
               <div className={Style.circle}></div>
             </li>
           ) : (
-            <li className={Style.NavbarLink}>
+            <li onClick={() => handleActive()} className={Style.NavbarLink}>
               <Link href='/'>Home</Link>
             </li>
           )}
           {router.pathname === "/my-portfolio" ? (
-            <li className={Style.NavbarListActive}>
+            <li
+              onClick={() => handleActive()}
+              className={Style.NavbarListActive}>
               <Link href='/my-portfolio'>Portfolio</Link>
               <div className={Style.circle}></div>
             </li>
           ) : (
-            <li className={Style.NavbarLink}>
+            <li onClick={() => handleActive()} className={Style.NavbarLink}>
               <Link href='/my-portfolio'>Portfolio</Link>
             </li>
           )}
           {router.pathname === "/about" ? (
-            <li className={Style.NavbarListActive}>
+            <li
+              onClick={() => handleActive()}
+              className={Style.NavbarListActive}>
               <Link href='/about'>About</Link>
               <div className={Style.circle}></div>
             </li>
           ) : (
-            <li className={Style.NavbarLink}>
+            <li onClick={() => handleActive()} className={Style.NavbarLink}>
               <Link href='/about'>About</Link>
             </li>
           )}
