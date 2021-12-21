@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Sansation;
+  src: url(../font/Sansation_Regular.ttf);
+}
+
+body {
+  background-color: #131313;
+  font-family: Sansation, "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffebeb;
+}
+
+li {
+  list-style: none;
+}
